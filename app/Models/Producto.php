@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Proveedore extends Model
+class Producto extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'nombre',
-        'direccion',
-        'telefono',
-        'email',
+        'descripcion',
+        'precio',
+        'cantidad_en_stock',
     ];
 }
