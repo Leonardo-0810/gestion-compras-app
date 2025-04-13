@@ -19,6 +19,22 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('productos.index')" :active="request()->routeIs('productos.index')" class="text-white hover:text-gray-200">
+                        {{ __('Producto') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('proveedores.index')" :active="request()->routeIs('proveedores.index')" class="text-white hover:text-gray-200">
+                        {{ __('Proveedor') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('ordencompras.index')" :active="request()->routeIs('ordencompras.index')" class="text-white hover:text-gray-200">
+                        {{ __('Orden de compora') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
