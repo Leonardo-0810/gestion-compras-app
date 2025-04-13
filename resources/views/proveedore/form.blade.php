@@ -13,7 +13,7 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="telefono" class="form-label">{{ __('Telefono') }}</label>
-            <input type="text" name="telefono" class="form-control @error('telefono') is-invalid @enderror" value="{{ old('telefono', $proveedore?->telefono) }}" id="telefono" placeholder="Telefono">
+            <input type="number" name="telefono" class="form-control @error('telefono') is-invalid @enderror" value="{{ old('telefono', $proveedore?->telefono) }}" id="telefono" placeholder="Telefono">
             {!! $errors->first('telefono', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">

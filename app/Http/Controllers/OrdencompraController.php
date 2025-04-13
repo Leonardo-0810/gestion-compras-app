@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ordencompra;
+use App\Models\producto;
+use App\Models\Proveedore;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use App\Http\Requests\OrdencompraRequest;
@@ -28,8 +30,10 @@ class OrdencompraController extends Controller
     public function create(): View
     {
         $ordencompra = new Ordencompra();
+        $productos = producto::all();
+        $proveedores = Proveedore::all();
 
-        return view('ordencompra.create', compact('ordencompra'));
+        return view('ordencompra.create', compact('ordencompra', 'productos', 'proveedores'));
     }
 
     /**

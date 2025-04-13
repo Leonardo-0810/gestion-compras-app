@@ -13,12 +13,12 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="precio" class="form-label">{{ __('Precio') }}</label>
-            <input type="text" name="precio" class="form-control @error('precio') is-invalid @enderror" value="{{ old('precio', $producto?->precio) }}" id="precio" placeholder="Precio">
+            <input type="number" name="precio" class="form-control @error('precio') is-invalid @enderror" value="{{ old('precio', $producto?->precio) }}" id="precio" placeholder="Precio">
             {!! $errors->first('precio', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
         <div class="form-group mb-2 mb20">
             <label for="cantidad_en_stock" class="form-label">{{ __('Cantidad En Stock') }}</label>
-            <input type="text" name="cantidad_en_stock" class="form-control @error('cantidad_en_stock') is-invalid @enderror" value="{{ old('cantidad_en_stock', $producto?->cantidad_en_stock) }}" id="cantidad_en_stock" placeholder="Cantidad En Stock">
+            <input type="number" name="cantidad_en_stock" class="form-control @error('cantidad_en_stock') is-invalid @enderror" value="{{ old('cantidad_en_stock', $producto?->cantidad_en_stock) }}" id="cantidad_en_stock" placeholder="Cantidad En Stock">
             {!! $errors->first('cantidad_en_stock', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
 

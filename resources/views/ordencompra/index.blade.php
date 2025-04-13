@@ -49,8 +49,8 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
-										<td >{{ $ordencompra->productos_id }}</td>
-										<td >{{ $ordencompra->proveedores_id }}</td>
+										<td >{{ $ordencompra->producto->nombre }}</td>
+										<td >{{ $ordencompra->proveedore->nombre }}</td>
 										<td >{{ $ordencompra->cantidad }}</td>
 										<td >{{ $ordencompra->fecha_orden }}</td>
 
