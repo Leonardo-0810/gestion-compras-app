@@ -36,6 +36,7 @@ cp .env.example .env
 php artisan key:generate
 Características principales:
 
+-RECORDAR para porder inicar todo el proyecto crear el archivo .env para modificar la BD y el nombre de la BD
 - Esta app Permite administrar productos, proveedores y ordenes de compra..
 - Tener en cuenta a la hora de ejecutrar la app tener  ejecutado el xampp con el MYSQL corriendo y en la consola el
 ## php artisan serve y el  npm run dev##.
