@@ -63,8 +63,10 @@ class OrdencompraController extends Controller
     public function edit($id): View
     {
         $ordencompra = Ordencompra::find($id);
+        $productos = producto::all();
+        $proveedores = Proveedore::all();
 
-        return view('ordencompra.edit', compact('ordencompra'));
+        return view('ordencompra.edit', compact('ordencompra','productos', 'proveedores'));
     }
 
     /**
